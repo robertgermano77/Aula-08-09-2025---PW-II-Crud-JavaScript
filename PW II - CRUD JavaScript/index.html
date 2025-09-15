@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD - Cadastro de Funcionários</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Funcionários</span>
+      <button onclick="openModal()" id="new">Incluir</button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Salário</th>
+            <th>Rua</th>
+            <th>Número</th>
+            <th>CEP</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>UF</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container">
+      <div class="modal">
+        <form id="form">
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" required />
+
+          <label for="m-funcao">Função</label>
+          <input id="m-funcao" type="text" required />
+
+          <label for="m-salario">Salário</label>
+          <input id="m-salario" type="number" required />
+
+          <label for="m-rua">Rua</label>
+          <input id="m-rua" type="text" required />
+
+          <label for="m-numero">Número</label>
+          <input id="m-numero" type="text" required />
+
+          <label for="m-cep">CEP</label>
+          <input id="m-cep" type="text" required />
+
+          <label for="m-bairro">Bairro</label>
+          <input id="m-bairro" type="text" required />
+
+          <label for="m-cidade">Cidade</label>
+          <input id="m-cidade" type="text" required />
+
+          <label for="m-uf">UF</label>
+          <input id="m-uf" type="text" maxlength="2" required />
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
